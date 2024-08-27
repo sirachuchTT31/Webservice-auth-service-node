@@ -1,3 +1,4 @@
 #npm i --force
 #npm run install-database
 #npx prisma generate
+#.env DATABASE_URL prisma จะอ่าน env
