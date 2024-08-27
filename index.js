@@ -1,6 +1,8 @@
 // import express, { Express } from 'express';
 const express = require('express')
-const { Utils } = require('common-sdk')
+// const { Utils } = require('common-sdk')
+const { DatabaseSDK } = require('database-sdk')
+// const prisma = require('database-sdk')
 const app = express()
 const Config = {
     port: 8001
@@ -11,13 +13,12 @@ async function main() {
     });
 
     app.get('/auth', async (req, res) => {
-        // const date = CovertUTC0000();
-        console.log(Utils.CovertUTC0000())
-        // const date = CommonSDK.;
-        // console.log(date)
-        // const result = await prisma.users.findMany();
+        const result = await DatabaseSDK.user.findMany({select : {
+            name : true,
+            id : true
+        }});
 
-        // res.json({ statusCode: 200, result: result });
+        res.json({ statusCode: 200, result: result });
     });
 }
 
