@@ -1,5 +1,5 @@
 import express, { Express } from 'express';
-// import { Utils } from 'webservice-auth-service-node';
+// import { Utils } from 'common-sdk';
 
 const app: Express = express();
 const Config = {

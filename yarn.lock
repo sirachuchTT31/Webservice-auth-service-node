@@ -238,6 +238,16 @@ chokidar@^3.5.2:
   optionalDependencies:
     fsevents "~2.3.2"
 
+"common-sdk@git+https://github.com/sirachuchTT31/Webservice-common-sdk-node.git":
+  version "1.0.0"
+  resolved "git+https://github.com/sirachuchTT31/Webservice-common-sdk-node.git#314d18acb44d72b6c4d4cdf1cbdfdee90c7986f5"
+  dependencies:
+    "@types/express" "^4.17.21"
+    express "^4.19.2"
+    nodemon "^3.1.4"
+    ts-node "^10.9.2"
+    typescript "^5.5.4"
+
 concat-map@0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/concat-map/-/concat-map-0.0.1.tgz#d8a96bd77fd68df7793a73036a3ba0d5405d477b"

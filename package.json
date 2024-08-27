@@ -13,6 +13,7 @@
   "dependencies": {
     "@types/express": "^4.17.21",
     "Webservice-common-sdk-node": "git+https://github.com/sirachuchTT31/Webservice-common-sdk-node.git",
+    "common-sdk": "git+https://github.com/sirachuchTT31/Webservice-common-sdk-node.git",
     "express": "^4.19.2",
     "nodemon": "^3.1.4",
     "ts-node": "^10.9.2",
