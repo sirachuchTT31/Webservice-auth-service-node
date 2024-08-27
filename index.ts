@@ -1,4 +1,5 @@
 import express, { Express } from 'express';
+// import { Utils } from 'webservice-auth-service-node';
 
 const app: Express = express();
 const Config = {
@@ -11,7 +12,7 @@ async function main() {
 
     app.get('/auth' , (req , res) => {
         res.send("Auth Gateway")
-    })
+    });
 }
 
 main();
