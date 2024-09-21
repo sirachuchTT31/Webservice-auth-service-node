@@ -2,8 +2,12 @@ const authController = require('../controllers/auth.controller');
 
 var router = require('express').Router();
 
-router.get("/user" , [
-    authController.user
+router.post("/sign-in", [
+    authController.signIn
+]);
+
+router.post("/sign-up", [
+    authController.signUp
 ]);
 
 
